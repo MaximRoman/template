@@ -1,1 +1,1 @@
-DB::table('book_comments')->join('users', 'book_comments.user_id', '=', 'users.id')->where('book_id', $bookId)->get(['book_comments.id','name','comment',]);
+DB::table('book_comments')->join('users', 'book_comments.user_id', '=', 'users.id ')->where('book_id', $bookId)->get(['book_comments.id','name','comment',]);
